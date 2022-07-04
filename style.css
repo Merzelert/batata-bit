@@ -21,8 +21,7 @@ html{
     font-family: "DM Sans", sans-serif;
 }
 
-header{
-    position: relative;
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +29,28 @@ header{
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: linear-gradient(232deg, #201e1c, #f7931a);
+    background-size: 400% 400%;
+
+    -webkit-animation: bgAnimateBitcoin 20s ease infinite;
+    -moz-animation: bgAnimateBitcoin 20s ease infinite;
+    animation: bgAnimateBitcoin 20s ease infinite;
+}
+
+@-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 header img{
@@ -42,10 +63,31 @@ header img{
 .header--title-container{
     width: 90%;
     min-width: 288px;
-    max-width: 288px;
+    max-width: 900px;
     height: 218px;
     margin-top: 40px;
     text-align: center;
     align-self: center;
+}
+
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    top: 270px;
+    
 }
 

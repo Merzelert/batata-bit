@@ -460,7 +460,6 @@ main {
 
 .plans-container--slider {
     display: flex;
-    /* gap: 50px; Aun no está soportado por todos los navegadores :( */
     height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -489,7 +488,9 @@ main {
     top: -15px;
     margin: 0;
     padding: 6px;
-    background-color: var(--bitcoin-orange);
+    background: linear-gradient(208.83deg,
+            var(--black) 16.69%,
+            var(--bitcoin-orange) 100%);
     border-radius: 8px;
     color: var(--just-white);
 }
@@ -512,6 +513,7 @@ main {
 
 .plans-container--card .plan-card--price sup {
     font-size: 2rem;
+    font-weight: 300;
     margin-right: -12px;
 }
 
@@ -525,7 +527,7 @@ main {
     margin-top: 20px;
     background: var(--off-white);
     border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;

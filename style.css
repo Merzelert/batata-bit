@@ -29,15 +29,20 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(232deg, #201e1c, #f7931a);
+    background: linear-gradient(
+    208.83deg,
+    var(--black) 16.69%,
+    var(--bitcoin-orange) 100%
+  );
+   /*  background: linear-gradient(232deg, #201e1c, #f7931a);
     background-size: 400% 400%;
-
-    -webkit-animation: bgAnimateBitcoin 20s ease infinite;
+ */
+/*     -webkit-animation: bgAnimateBitcoin 20s ease infinite;
     -moz-animation: bgAnimateBitcoin 20s ease infinite;
     animation: bgAnimateBitcoin 20s ease infinite;
-}
+ */}
 
-@-webkit-keyframes bgAnimateBitcoin {
+/* @-webkit-keyframes bgAnimateBitcoin {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -51,7 +56,7 @@ header {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
+} */
 
 header img{
     width: 150px;
@@ -111,4 +116,33 @@ header img{
     height: 8px;
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/img/Bitcoin.svg');
 }

@@ -52,7 +52,10 @@
                         </table>
                       </div>
                       <div class="currency-table--date">
-                        <p><b>Actualizado el: </b><script> document.write(new Date().toLocaleString());</script></b></p>
+                        <p><b>Actualizado el: </b><script> document.write(new Date().toLocaleString("en" , {
+                            timeStyle: "short",
+                            dateStyle: "short"
+                          }));</script></b></p>
                       </div>
                     </div>
                     <div class="main-commissions-table">
@@ -78,7 +81,10 @@
                         </table>
                       </div>
                       <div class="commissions-table--date">
-                            <p><b>Actualizado el: </b><script> document.write(new Date().toLocaleString());</script></b></p>
+                            <p><b>Actualizado el: </b><script> document.write(new Date().toLocaleString("en" , {
+                                timeStyle: "short",
+                                dateStyle: "short"
+                              }));</script></b></p>
                         </div>
                     </div>
                 </section>
